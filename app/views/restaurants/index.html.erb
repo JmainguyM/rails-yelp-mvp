@@ -1,0 +1,12 @@
+<h1>Liste de tous les restaus!</h1>
+
+
+<div class="container d-flex">
+  <% @restaurants.each do |restaurant| %>
+  <div class="col-2" >
+    <p><%= restaurant.name %></p>
+    <p><%= restaurant.category %></p>
+    <p><%= link_to "See details", restaurant_path(restaurant), class: "btn btn-primary"%></p>
+  </div>
+  <% end %>
+</div>

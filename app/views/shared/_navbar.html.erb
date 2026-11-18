@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+  <div class="container">
+    <%= link_to "Restaurants", restaurants_path, class: "navbar-brand" %>
+
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item">
+        <%= link_to "Tous les restaurants", restaurants_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Ajouter un restaurant", new_restaurant_path, class: "nav-link" %>
+      </li>
+    </ul>
+  </div>
+</nav>
